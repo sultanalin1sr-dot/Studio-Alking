@@ -1,74 +1,161 @@
- <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>دندون</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<title>DANDOUN AI</title>
 
 <style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
+
 body{
-    margin:0;
-    font-family:Arial, sans-serif;
-    background:black;
-    color:white;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    height:100vh;
-    overflow:hidden;
+background:#050816;
+color:white;
+overflow-x:hidden;
 }
 
-.container{
-    text-align:center;
+.hero{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+text-align:center;
+padding:20px;
+background:
+radial-gradient(circle at top,#1d2b64,#050816 70%);
 }
 
-h1{
-    font-size:55px;
-    color:#00ffcc;
-    text-shadow:0 0 20px #00ffcc;
+.hero h1{
+font-size:70px;
+margin-bottom:20px;
+letter-spacing:4px;
 }
 
-p{
-    color:#ccc;
-    font-size:20px;
-    margin-bottom: 30px;
+.hero p{
+max-width:700px;
+line-height:1.8;
+font-size:20px;
+opacity:.8;
 }
 
-button{
-    padding:15px 35px;
-    border:none;
-    border-radius:15px;
-    background:#00ffcc;
-    color:black;
-    font-size:20px;
-    cursor:pointer;
-    transition:0.3s;
+.btn{
+margin-top:35px;
+padding:15px 35px;
+border:none;
+border-radius:40px;
+background:#6c63ff;
+color:white;
+font-size:18px;
+cursor:pointer;
+transition:.3s;
 }
 
-button:hover{
-    transform:scale(1.1);
-    background:white;
+.btn:hover{
+transform:scale(1.08);
+background:#847dff;
 }
+
+.section{
+padding:100px 20px;
+max-width:1200px;
+margin:auto;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+margin-top:50px;
+}
+
+.card{
+background:#101528;
+padding:30px;
+border-radius:25px;
+transition:.3s;
+border:1px solid rgba(255,255,255,.05);
+}
+
+.card:hover{
+transform:translateY(-10px);
+background:#161d35;
+}
+
+.card h3{
+margin-bottom:15px;
+font-size:24px;
+}
+
+footer{
+padding:40px;
+text-align:center;
+opacity:.5;
+}
+
 </style>
-
 </head>
 
 <body>
 
-<div class="container">
-<h1>دندون</h1>
-<p>أول عالم رقمي يعكس مزاجك وأفكارك</p>
+<section class="hero">
 
-<button onclick="showMessage()">
-ابدأ الرحلة
+<h1>DANDOUN</h1>
+
+<p>
+A cinematic AI companion built between neon skylines and desert poetry.
+Talk. Feel. Explore your mood with futuristic intelligence.
+</p>
+
+<button class="btn">
+Start The Journey
 </button>
+
+</section>
+
+<section class="section">
+
+<h2 style="font-size:40px;text-align:center;">
+Why DANDOUN?
+</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>AI Companion</h3>
+<p>
+A futuristic emotional AI that understands your vibe.
+</p>
 </div>
 
-<script>
-function showMessage(){
-    alert("أهلاً بك في عالم دندون الرقمي 😎");
-}
-</script>
+<div class="card">
+<h3>Mood Analyzer</h3>
+<p>
+Reads the emotion behind your words in real time.
+</p>
+</div>
+
+<div class="card">
+<h3>Bilingual</h3>
+<p>
+Arabic soul with modern English cinematic style.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+© 2046 DANDOUN Studio
+</footer>
 
 </body>
 </html>
